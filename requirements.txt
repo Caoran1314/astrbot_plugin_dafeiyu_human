@@ -1,0 +1,2 @@
+# 修复 AstrBot 镜像里缺失的 edge_tts（大肥鱼语音-Edge 提供商依赖）
+edge-tts==7.3.1
