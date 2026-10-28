@@ -1,0 +1,12 @@
+name: dafeiyu_human
+display_name: 大肥鱼拟人管线
+desc: 让大肥鱼像人一样发消息：会延迟、会分条、会打错字、不说 AI 腔、不用冒号破折号和句号
+help: 装上即可用；配置里可以调延迟概率、错字率、单条字数上限、AI 腔黑名单补充
+version: v0.1.0
+author: Caoran1314
+repo: https://github.com/Caoran1314/astrbot_plugin_dafeiyu_human
+category: AI 增强
+astrbot_version: ">=4.24.0"
+support_platforms:
+  - aiocqhttp
+  - webchat
