@@ -1,0 +1,116 @@
+{
+  "delay_enable": {
+    "description": "启用拟人延迟",
+    "type": "bool",
+    "hint": "像人一样过一会儿才回，而不是秒回",
+    "default": true
+  },
+  "delay_private_enable": {
+    "description": "私聊启用延迟",
+    "type": "bool",
+    "default": true
+  },
+  "delay_group_enable": {
+    "description": "群聊启用延迟",
+    "type": "bool",
+    "hint": "群聊里延迟会显得更自然，但可能错过话题",
+    "default": false
+  },
+  "delay_short_probability": {
+    "description": "短延迟概率",
+    "type": "float",
+    "hint": "0~1，命中后等 0.6~4 秒，模拟打字和放下手头的事",
+    "default": 0.45
+  },
+  "delay_long_probability": {
+    "description": "长延迟概率",
+    "type": "float",
+    "hint": "0~1，命中后等 20~90 秒，模拟她在忙。0 表示关闭",
+    "default": 0.0
+  },
+  "delay_cooldown_seconds": {
+    "description": "同会话延迟冷却（秒）",
+    "type": "int",
+    "hint": "刚回过话的这段时间内不再叠加延迟",
+    "default": 20
+  },
+  "polish_enable": {
+    "description": "启用文本规整",
+    "type": "bool",
+    "default": true
+  },
+  "drop_slop": {
+    "description": "删掉 AI 腔句子",
+    "type": "bool",
+    "hint": "命中「综上所述」「有什么可以帮你」这类整句删除",
+    "default": true
+  },
+  "spokenize": {
+    "description": "书面词换口语",
+    "type": "bool",
+    "hint": "非常→挺、因此→所以 等",
+    "default": true
+  },
+  "strip_markdown": {
+    "description": "去掉 markdown 痕迹",
+    "type": "bool",
+    "default": true
+  },
+  "ban_colon": {
+    "description": "禁用冒号",
+    "type": "bool",
+    "hint": "AI 中文最爱用冒号，真人在 QQ 上基本不写",
+    "default": true
+  },
+  "ban_dash": {
+    "description": "禁用破折号",
+    "type": "bool",
+    "default": true
+  },
+  "ban_quotes": {
+    "description": "去掉双引号",
+    "type": "bool",
+    "default": true
+  },
+  "strip_trailing_period": {
+    "description": "去掉句末句号",
+    "type": "bool",
+    "default": true
+  },
+  "max_chars_per_line": {
+    "description": "单条消息最大字数",
+    "type": "int",
+    "hint": "超过就拆成下一条，建议 20~30",
+    "default": 30
+  },
+  "max_lines": {
+    "description": "一次回复最多几条",
+    "type": "int",
+    "hint": "超出的直接截断，防止刷屏",
+    "default": 6
+  },
+  "typo_rate": {
+    "description": "错字概率",
+    "type": "float",
+    "hint": "0~0.05，1% 已经很自然；短回复不会打错字",
+    "default": 0.01
+  },
+  "enforce_one_sentence_per_line": {
+    "description": "强制一句一行",
+    "type": "bool",
+    "hint": "配合平台的分段回复，才能逐条发出去",
+    "default": true
+  },
+  "extra_banned_phrases": {
+    "description": "额外要删的词句",
+    "type": "list",
+    "hint": "命中就整句丢弃，一行一个",
+    "default": []
+  },
+  "typo_min_chars": {
+    "description": "多长的回复才允许打错字",
+    "type": "int",
+    "hint": "默认 6：只回「在」「嗯」这种绝不会打错，否则整句就变意思了",
+    "default": 6
+  }
+}
